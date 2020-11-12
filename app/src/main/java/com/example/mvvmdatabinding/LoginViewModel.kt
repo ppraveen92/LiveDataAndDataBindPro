@@ -11,7 +11,7 @@ class LoginViewModel :ViewModel() {
 
     var username= MutableLiveData<String>()
     var pass= MutableLiveData<String>()
-    var edittext= MutableLiveData<String>()
+  //  var edittext= MutableLiveData<String>()
     var status= MutableLiveData<String>()
 
     fun updateUserName(v: View)
@@ -19,7 +19,7 @@ class LoginViewModel :ViewModel() {
         if(pass.value.equals("") || username.value.equals(""))
             status.value = "Fill All the variable"
         else
-            username.value = "Logged"
+            status.value = "Logged"
     }
 
     val textWatcher : TextWatcher = object : TextWatcher{
@@ -30,6 +30,7 @@ class LoginViewModel :ViewModel() {
         override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
             Log.v("TEXXTXTX",s.toString())
             username.value=s.toString()
+            
         }
 
         override fun afterTextChanged(s: Editable?) {
@@ -46,6 +47,7 @@ class LoginViewModel :ViewModel() {
         override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
             Log.v("TEXXTXTX",s.toString())
             pass.value=s.toString()
+
         }
 
         override fun afterTextChanged(s: Editable?) {

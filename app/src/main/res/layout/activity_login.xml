@@ -37,7 +37,7 @@
                 android:theme="@style/MyEditTextTheme"
                 android:textColorHint="#DDD"
                 android:textColor="#000"
-                android:text="@{loginviewmodel.edittext}"
+                android:text="@{loginviewmodel.username}"
                 android:id="@+id/editUsername"
                 android:layout_width="match_parent"
                 app:textWatchher="@{loginviewmodel.textWatcher}"
@@ -83,14 +83,45 @@
 
     </LinearLayout>
 
-    <TextView
-        android:gravity="center_horizontal"
-        android:textSize="20sp"
-        android:textColor="@color/orangeKightColor"
-        android:textStyle="bold"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text='@{loginviewmodel.username,default="valuess"}'
-        android:layout_weight="2"/>
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="@color/stylish_red"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='@{loginviewmodel.username,default="Username"}'
+            />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="@color/orangeKightColor"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='@{loginviewmodel.pass,default="Password"}'
+           />
+        <TextView
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="#0F0"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text='@{loginviewmodel.status,default="Status"}'
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+
+
+
 </LinearLayout>
 </layout>
