@@ -3,4 +3,64 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="blueColor">#2F5597</color>
+    <color name="pinkColor">#FF3B64</color>
+    <color name="blueLightColor">#0BA89A</color>
+    <color name="orangeKightColor">#F0823C</color>
+    <color name="lightblue">#0090EE</color>
+    <color name="black">#000</color>
+
+
+    <color name="stylish_red">#C70039</color>
+    <color name="stylish_red_color">#900C3F</color>
+    <color name="light_stylish_red_color">#900C0F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dodger_blue">#1E90FF</color>
+    <color name="dark_dodger_blue">#1873cc</color>
+    <color name="lime">#cddc39</color>
+
+    <color name="green">#269b24</color>
+
+    <color name="lightGreen">#8bc34a</color>
+    <color name="dodger_blue2">#3d83f8</color>
+
+    <color name="golden_color">#FF5C00</color>
+    <color name="goldenlight">#FF9C00</color>
+
+    <color name="greytrans">#11000000</color>
+
+    <color name="placeholder_bg">#dddddd</color>
+    <color name="item_name">#0c0c0c</color>
+    <color name="description">#1a1a1a</color>
+    <color name="chef">#777</color>
+    <color name="timestamp">#777</color>
+    <color name="perlous">#0B6138</color>
+    <color name="grey">#848484</color>
+    <color name="orange">#FF4000</color>
+    <color name="yellow">#FFFF00</color>
+
+    <color name="actionlight">#009688</color>
+    <color name="actiondark">#00796B</color>
+
+
+    <color name="background_gradient_start">#000000</color>
+
+    <color name="background_gradient_end">#DDDDDD</color>
+
+    <color name="fastlane_background">#005A9C</color>
+
+    <color name="search_opaque">#ffaa3f</color>
+
+    <color name="selected_background">#ffaa3f</color>
+
+    <color name="default_background">#3d3d3d</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="grey_transparent">#99000000</color>
+
+
+    <color name="pressed_color">#4d90fe</color>
+
+    <color name="default_color">#ffffff</color>
 </resources>

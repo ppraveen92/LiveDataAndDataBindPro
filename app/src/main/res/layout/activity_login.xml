@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="loginviewmodel"
+            type="com.example.mvvmdatabinding.LoginViewModel" />
+    </data>
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+
+            <EditText
+                android:layout_marginLeft="@dimen/marginn_bottom_20"
+                android:layout_marginRight="@dimen/marginn_bottom_20"
+                android:inputType="text"
+                android:theme="@style/MyEditTextTheme"
+                android:textColorHint="#DDD"
+                android:textColor="#000"
+                android:text="@{loginviewmodel.edittext}"
+                android:id="@+id/editUsername"
+                android:layout_width="match_parent"
+                app:textWatchher="@{loginviewmodel.textWatcher}"
+                android:layout_height="wrap_content"
+                android:hint="Username" />
+
+
+
+
+            <EditText
+                app:textPassWatcher="@{loginviewmodel.textPaaWatcher}"
+                android:text="@{loginviewmodel.pass}"
+                android:layout_marginLeft="@dimen/marginn_bottom_20"
+                android:layout_marginRight="@dimen/marginn_bottom_20"
+                android:theme="@style/MyEditTextTheme"
+                android:textColorHint="#DDD"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginn_10"
+                android:hint="Password" />
+
+
+
+
+
+        <Button
+            android:id="@+id/btn_userlogin"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_blue_select"
+            android:gravity="center"
+            android:text="L O G I N"
+            android:textAllCaps="false"
+            android:onClick="@{loginviewmodel.updateUserName}"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="@color/orangeKightColor"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text='@{loginviewmodel.username,default="valuess"}'
+        android:layout_weight="2"/>
+</LinearLayout>
+</layout>
