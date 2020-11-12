@@ -1,24 +1,22 @@
-package com.example.mvvmdatabinding
+package com.example.mvvmdatabinding.view
 
 import android.app.Activity
-import android.app.ProgressDialog.show
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Message
-import android.util.Log
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.viewModelScope
+import com.example.mvvmdatabinding.R
 import com.example.mvvmdatabinding.databinding.ActivityLoginBinding
+import com.example.mvvmdatabinding.viewmodel.LoginViewModel
 
 class LoginActivity : AppCompatActivity() {
 
     lateinit var binding : ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this,R.layout.activity_login)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_login)
         val viewModel=ViewModelProvider(this).get(LoginViewModel::class.java)
 
         binding.loginviewmodel=viewModel

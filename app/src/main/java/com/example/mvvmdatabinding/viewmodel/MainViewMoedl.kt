@@ -1,4 +1,4 @@
-package com.example.mvvmdatabinding
+package com.example.mvvmdatabinding.viewmodel
 
 import android.os.CountDownTimer
 import android.view.View

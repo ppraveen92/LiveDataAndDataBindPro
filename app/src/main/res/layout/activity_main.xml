@@ -26,7 +26,7 @@
 
         <variable
             name="mainViewModel"
-            type="com.example.mvvmdatabinding.MainViewMoedl" />
+            type="com.example.mvvmdatabinding.viewmodel.MainViewMoedl" />
     </data>
 
     <LinearLayout

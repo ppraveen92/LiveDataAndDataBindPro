@@ -1,11 +1,12 @@
-package com.example.mvvmdatabinding
+package com.example.mvvmdatabinding.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelProviders
+import com.example.mvvmdatabinding.R
 import com.example.mvvmdatabinding.databinding.ActivityMainBinding
+import com.example.mvvmdatabinding.viewmodel.MainViewMoedl
 
 
 class MainActivity : AppCompatActivity() {
@@ -13,7 +14,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var activityBind:ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        activityBind=DataBindingUtil.setContentView(this,R.layout.activity_main)
+        activityBind=DataBindingUtil.setContentView(this, R.layout.activity_main)
 
 
 
