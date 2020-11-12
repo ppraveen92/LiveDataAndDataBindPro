@@ -5,6 +5,7 @@ import android.app.ProgressDialog.show
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Message
+import android.util.Log
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
@@ -29,6 +30,10 @@ class LoginActivity : AppCompatActivity() {
             Toast.makeText(this,viewModel.status.value,Toast.LENGTH_SHORT).show()
         })
 
+
+        viewModel.edittext.observe(this, Observer {
+            Toast.makeText(this,it.toString(),Toast.LENGTH_SHORT).show()
+        })
 
     }
 }
